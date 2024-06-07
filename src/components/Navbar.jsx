@@ -70,7 +70,7 @@ const Navbar = () => {
 
         {menu && (
           <div>
-            <ul className="md:hidden flex flex-col  h-screen items-center justify-center space-y-4 text-xl">
+            <ul className="md:hidden flex flex-col  h-screen items-center justify-center space-y-4 text-xl bg-white">
               {navItems.map(({ id, text }) => (
                 <li
                   className="hover:scale-105 duration-200 cursor-pointer select-none font-semibold"

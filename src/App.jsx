@@ -7,6 +7,7 @@ import PortFolio from "./components/PortFolio";
 import Experiance from "./components/Experiance";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Contact />
         <Footer />
       </div>
+      <Toaster />
     </>
   );
 }
