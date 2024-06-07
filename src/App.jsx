@@ -1,16 +1,13 @@
 import { useState } from "react";
-
-import photoavater from "../public/photo.avif";
 import "./App.css";
-import { AiOutlineMenu } from "react-icons/ai";
-import { IoCloseSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 function App() {
   return (
     <>
       <div>
         <Navbar />
+        <Home />
       </div>
     </>
   );

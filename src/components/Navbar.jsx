@@ -30,7 +30,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-sm h-16">
+      <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 shadow-sm h-16 fixed top-0 left-0 right-0">
         <div className="flex justify-between items-center h-16">
           <div className="flex space-x-2 ">
             <img src={photoavater} alt="" className="h-12 w-12 rounded-full" />
@@ -60,10 +60,10 @@ const Navbar = () => {
 
         {menu && (
           <div>
-            <ul className="md:hidden flex flex-col  h-screen items-center justify-center space-y-4">
+            <ul className="md:hidden flex flex-col  h-screen items-center justify-center space-y-4 text-xl">
               {navItems.map(({ id, text }) => (
                 <li
-                  className="hover:scale-105 duration-200 cursor-pointer select-none"
+                  className="hover:scale-105 duration-200 cursor-pointer select-none font-semibold"
                   key={id}
                 >
                   {text}
